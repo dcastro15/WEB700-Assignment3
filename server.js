@@ -4,7 +4,7 @@
 *  of this assignment has been copied manually or electronically from any other source 
 *  (including 3rd party web sites) or distributed to other students.
 * 
-*  Name: Dennis Castro Student ID: 122875222 Date: June 14, 2023
+*  Name: Dennis Castro Student ID: 122875222 Date: June 15, 2023
 *
 ********************************************************************************/ 
 
@@ -15,6 +15,11 @@ const collegeData = require("./modules/collegeData");
 
 const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
+/*const IP_ADDRESS = '192.168.4.101';
+
+const server = app.listen(HTTP_PORT, IP_ADDRESS, () => {
+  console.log(`Server listening on ${IP_ADDRESS}:${HTTP_PORT}`);
+});*/
 
 app.use(express.static('public'));
 
